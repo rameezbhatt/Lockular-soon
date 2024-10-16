@@ -1,48 +1,130 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    text-align: center;
 }
 
 .container {
-    text-align: center;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 0, 0, 0.05);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%;
 }
 
-h1 {
-    color: #333;
+.company-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.coming-soon {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
 
 .countdown {
-    font-size: 2rem;
-    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: #ff3333;
 }
 
-form {
-    margin-top: 1rem;
+.tagline {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff6666;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.feature {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.quote {
+    font-style: italic;
+    color: #ff9999;
+    font-size: 1.2rem;
+}
+
+.cta {
+    margin-top: 2rem;
 }
 
 input[type="email"] {
     padding: 0.5rem;
     width: 60%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
     margin-right: 0.5rem;
 }
 
 button {
     padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
+    background-color: #ff0000;
+    color: #ffffff;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #cc0000;
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+}
+
+.coming-soon strong {
+    display: inline-block;
+    animation: pulse 2s infinite;
 }
